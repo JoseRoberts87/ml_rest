@@ -6,3 +6,5 @@ dist
 dist/
 venv
 venv/
+*.pyc
+__pycache__

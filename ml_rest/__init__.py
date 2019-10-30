@@ -11,6 +11,6 @@ def create_app():
     app = Flask(__name__, instance_relative_config=True)
 
     from ml_rest import api
-    app.register_blueprint(api.ml_rest_bp)
+    app.register_blueprint(api.bp)
 
     return app

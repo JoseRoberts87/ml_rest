@@ -8,7 +8,7 @@ from PIL import Image
 import numpy as np
 
 
-ml_rest_bp = Blueprint("ml_rest", __name__, url_prefix="/ml_rest", template_folder='templates')
+bp = Blueprint("ml_rest", __name__, url_prefix="/ml_rest", template_folder='templates')
 
 model = None
 
@@ -48,12 +48,12 @@ def prepare_image(image, target):
 
 d_type_headers = {"Content-Type": "application/json"}
 
-@ml_rest_bp.route('/', methods=['GET'])
+@bp.route('/', methods=['GET'])
 def index():
     return jsonify({'data': 'return available endpoints and methods'}, 200, d_type_headers)
 
 
-@ml_rest_bp.route('/predict', methods=["POST"])
+@bp.route('/predict', methods=["POST"])
 def predict():
     load_model()
 

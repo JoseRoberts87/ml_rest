@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name='ml_rest',
-    version='1.0.2',
+    version='1.0.3',
     packages=find_packages(),
     include_package_data=True,
     license='MIT',  # Chose a license from here: https://help.github.com/articles/licensing-a-repository
@@ -20,7 +20,8 @@ setup(
     install_requires=[
         'flask',
         'tensorflow==1.12.0',
-        'keras==2.0.9'
+        'keras==2.0.9',
+        'Pillow==6.2.1'
     ],
     classifiers=[
         "License :: OSI Approved :: MIT License",

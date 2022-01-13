@@ -21,7 +21,7 @@ setup(
         'flask',
         'tensorflow==1.12.0',
         'keras==2.0.9',
-        'Pillow==6.2.1'
+        'Pillow==9.0.0'
     ],
     classifiers=[
         "License :: OSI Approved :: MIT License",

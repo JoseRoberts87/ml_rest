@@ -19,7 +19,7 @@ setup(
     python_requires='>=3.6',
     install_requires=[
         'flask',
-        'tensorflow==1.12.0',
+        'tensorflow==2.5.3',
         'keras==2.0.9',
         'Pillow==6.2.1'
     ],
